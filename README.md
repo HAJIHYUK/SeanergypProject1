@@ -10,7 +10,7 @@
 
 ### [Research 01] UI 가상화 및 접근성 차단 분석
 - **시도**: Microsoft UI Automation(UIA) 및 MSAA 표준 패턴을 이용한 직접 텍스트 추출.
-- **발견**: `inspect.exe` 분석 결과, 카톡은 표준 컨트롤을 쓰지 않고 자체적으로 그림을 그리는 것으로 추측됩니다. (`IsTextPatternAvailable: False`).
+- **발견**: `Accessibility Insights.exe` 분석 결과, 카톡은 표준 컨트롤을 쓰지 않고 자체적으로 그림을 그리는 것으로 추측됩니다. (`IsTextPatternAvailable: False`).
 - **결론**: 표준 접근성 API로는 텍스트 스트림 확보가 불가능함 (관련: `01_uia_msaa_failure_analysis.py`)
 
 ### [Research 02] 커널 메시지 주입 및 스레드 동기화 시도
