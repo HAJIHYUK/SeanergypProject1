@@ -44,7 +44,7 @@ class KakaoBotController:
                     print(f"!! 전송 실패")
 
 if __name__ == "__main__":
-    controller = KakaoBotController("지혁")
+    controller = KakaoBotController("지혁") ##### 실행시 수정할곳
     receiver_thread = threading.Thread(target=controller.run_receiver_loop, daemon=True)
     receiver_thread.start()
     controller.run_sender_interface()

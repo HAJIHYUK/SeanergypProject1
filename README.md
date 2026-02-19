@@ -74,10 +74,11 @@ PyProject/
 ---
 
 ## 5. 실행 방법 (Quick Start)
-1. 카카오톡 채팅방을 별도 창으로 분리 실행 (대상: "지혁")
-2. 의존성 설치: `pip install pywin32 pyperclip psutil sqlalchemy`
-3. 프로그램 실행: `python PyProject/kakao_main.py`
-4. 수집 데이터 확인: `kakao_data.db` (SQLite)
+1. 카카오톡 채팅방더블 클릭하여 분리 실행
+2. PyProject/kakao_main.py 최하단 controller = KakaoBotController("지혁") 부분을 지혁이 아닌 타겟할 채팅방이름 입력
+3. 의존성 설치: `pip install pywin32 pyperclip psutil sqlalchemy`
+4. 프로그램 실행: `python PyProject/kakao_main.py`
+5. 수집 데이터 확인: `kakao_data.db` (SQLite)
 
 ---
 
