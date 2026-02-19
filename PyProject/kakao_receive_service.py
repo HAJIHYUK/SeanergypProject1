@@ -58,8 +58,8 @@ class KakaoReceiveService:
         lines = [l for l in lines if "PS C:\\" not in l and "psutil" not in l]
         if not lines: return []
 
-        # 2. [DB 최신화] DB에서 마지막 20줄을 실시간으로 가져옴
-        db_tail = self.repository.get_last_n_messages(20)
+        # 2. [DB 최신화] DB에서 마지막 100줄을 실시간으로 가져옴
+        db_tail = self.repository.get_last_n_messages(100)
         
         # 3. [동기화 지점 찾기]
         # DB의 마지막 5줄 뭉치가 현재 긁어온 리스트의 어디에 있는지 뒤에서부터 정밀 탐색
